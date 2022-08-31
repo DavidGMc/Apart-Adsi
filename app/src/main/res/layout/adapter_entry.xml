@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapterEntry_mainCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/adapterEntry_mainConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/adapterEntry_imgPhoto"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/clipboard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adapterEntry_txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/view_background"
+            android:gravity="center"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/adapterEntry_imgPhoto"
+            app:layout_constraintRight_toLeftOf="@+id/adapterEntry_Menu"
+            app:layout_constraintTop_toTopOf="@+id/adapterEntry_imgPhoto" />
+
+        <TextView
+            android:id="@+id/adapterEntry_txtContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:lines="2"
+            android:minLines="2"
+            android:textColor="@color/grey_700"
+            app:layout_constraintLeft_toRightOf="@+id/adapterEntry_imgPhoto"
+            app:layout_constraintRight_toLeftOf="@+id/adapterEntry_Menu"
+            app:layout_constraintTop_toBottomOf="@+id/adapterEntry_txtTitle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toLeftOf="@+id/adapterEntry_txtContent"
+            app:layout_constraintRight_toRightOf="@+id/adapterEntry_txtContent"
+            app:layout_constraintTop_toBottomOf="@+id/adapterEntry_txtContent">
+
+            <TextView
+                android:id="@+id/adapterEntry_txtDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/grey_500"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/adapterEntry_txtAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@color/grey_500"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/adapterEntry_Menu"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            app:bmb_inList="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

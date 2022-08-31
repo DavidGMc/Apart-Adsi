@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "255451078040",
+    "firebase_url": "https://apart-com-default-rtdb.firebaseio.com",
+    "project_id": "apart-com",
+    "storage_bucket": "apart-com.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255451078040:android:eeb1854dcf8c352c7a9fed",
+        "android_client_info": {
+          "package_name": "adsi.apart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255451078040-gvdt8b8rvhgqgusc4jbqhn8c94kmd83v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYzcKCFXpMk04pCD_U87tuj57m0ty8oTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255451078040-gvdt8b8rvhgqgusc4jbqhn8c94kmd83v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

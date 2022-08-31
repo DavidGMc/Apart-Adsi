@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/groupOptions"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/groupOptions_Menu"
+            android:icon="@drawable/home"
+            android:title="@string/groupOptions_Menu" />
+        <item
+            android:id="@+id/groupOptions_Profile"
+            android:icon="@drawable/account_card_details"
+            android:title="@string/groupOptions_Profile" />
+    </group>
+    <group
+        android:id="@+id/groupOthers"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/groupOthers_Information"
+            android:icon="@drawable/information"
+            android:title="@string/groupOthers_Information" />
+        <item
+            android:id="@+id/groupOthers_About"
+            android:icon="@drawable/android"
+            android:title="@string/groupOthers_About" />
+    </group>
+    <group
+        android:id="@+id/groupClose"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/groupClose_Close"
+            android:icon="@drawable/logout_variant"
+            android:title="@string/groupClose_Close" />
+    </group>
+</menu>
